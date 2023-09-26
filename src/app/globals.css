@@ -10,18 +10,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --foreground-rgb: 226, 232, 240;
+    --background-start-rgb: 15, 23, 42;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  color: theme("colors.primary.400");
+  background: theme("colors.primary.900");
+}
+
+a.active > *.bar {
+  @apply w-20 bg-accent-200;
+}
+
+a.active {
+  @apply text-accent-200;
 }
