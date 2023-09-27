@@ -19,8 +19,8 @@ const Card = ({ year, title, description, tags }: CardProps) => {
             <PiArrowRightBold className="group-hover:translate-x-2 duration-200" />
           </div>
           <ol className="list-disc">
-            {description.map((item) => {
-              return <li>{item}</li>;
+            {description.map((item, idx) => {
+              return <li key={idx}>{item}</li>;
             })}
           </ol>
           <div className="flex mt-5 gap-2 flex-wrap">
