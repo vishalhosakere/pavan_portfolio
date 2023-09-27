@@ -1,20 +1,44 @@
 [
   {
-    "title": "Project",
-    "date": "",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, obcaecati at sit eius iusto assumenda veritatis esse voluptatibus nam nesciunt.",
-    "tags": ["Tag 1", "Tag 2", "Tag 3"]
+    "title": "2-bit Full Adder 7nm PDK",
+    "date": "Spring 2022",
+    "description": [
+      "Developed Verilog code for the design and synthesized netlist using Design Compiler",
+      " Performed APR using Innovus and imported GDS from Innovus into cadence virtuoso layout",
+      "Performed simulation using the Hspice simulator"
+    ],
+    "tags": ["RTL 2 GDSII", "PD", "DRC", "LVS"]
   },
   {
-    "title": "Project",
-    "date": "",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, obcaecati at sit eius iusto assumenda veritatis esse voluptatibus nam nesciunt.",
-    "tags": ["Tag 1", "Tag 2", "Tag 3"]
+    "title": "AOI22 7nm PDK",
+    "date": "Spring 2022",
+    "description": [
+      "Designed AOI21 schematics and layout using Cadence Virtuoso",
+      "Devised test bench to observe delay and functionality by HSPICE simulation",
+      "Performed LVS, DRC, and Pex extraction",
+      "Compared the delay metrics of pre and post-layout simulation to understand the impact of RC delay",
+      "Placed the cells in a 3x3 matrix and cleared DRC to realize the importance of compact layout design"
+    ],
+    "tags": ["Design", "Synthesis", "Layout"]
   },
   {
-    "title": "Project",
-    "date": "",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, obcaecati at sit eius iusto assumenda veritatis esse voluptatibus nam nesciunt.",
-    "tags": ["Tag 1", "Tag 2", "Tag 3"]
+    "title": "16x16 RF",
+    "date": "Spring 2022",
+    "description": [
+      "Designed the schematic and layout of a 16x1 Column of the RF and of 4x16 Decoder",
+      "Integrated 16x1 Column Group with 4x16 Decoder to obtain 16x16 RF",
+      "Verified RF functionality with test scripts."
+    ],
+    "tags": ["Decoder", "Memory", "SRAM"]
+  },
+  {
+    "title": "CMOS Digital Circuits",
+    "date": "Fall 2021",
+    "description": [
+      "Simulated the various basic circuits and thoroughly analyzed their delay, rise, and fall times under various constraints.",
+      "Designed a 4-bit adder with 32nm technology achieving an area of 33.26 μm², a delay of 62.1pS",
+      "Implemented layout of digital circuits, designing a test bench and simulation using Hspice"
+    ],
+    "tags": ["Virtuoso", "Spice"]
   }
 ]

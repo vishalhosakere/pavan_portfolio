@@ -4,7 +4,7 @@ import { PiArrowRightBold } from "react-icons/pi";
 type CardProps = {
   year: string;
   title: string;
-  description: string;
+  description: string[];
   tags: string[];
 };
 
@@ -18,7 +18,11 @@ const Card = ({ year, title, description, tags }: CardProps) => {
             {title}
             <PiArrowRightBold className="group-hover:translate-x-2 duration-200" />
           </div>
-          <div className="">{description}</div>
+          <ol className="list-disc">
+            {description.map((item) => {
+              return <li>{item}</li>;
+            })}
+          </ol>
           <div className="flex mt-5 gap-2 flex-wrap">
             {tags.map((tag, idx) => {
               return <Tag value={tag} key={idx} />;
