@@ -1,6 +1,9 @@
-[
-  "Passionate about design and development of semiconductor chips.",
-  "I am always open to learn and collaborate, keeps me enthusiastic about engineering, particularly in VLSI.",
-  "Combined with a minimalistic mindset, this drive has led me to be skillful in coding for efficiency.",
-  "I invite you to explore my online portfolio to gain insights into my qualifications and the projects!"
-]
+{
+  "strings": [
+    "Date back to 2021, after dedicating four years to Continental AG following my undergraduate studies in Electronics Engineering, I decided to relocate to the USA, to pursue my passion for designing and developing semiconductor chips. My commitment to education has never been out of compulsion but a conscious pursuit. I maintain an open mindset, always ready to learn and collaborate, which has kept my enthusiasm for engineering, particularly in  VLSI. This, in combination with my minimalist approach, has led me to cultivate my skills in coding for efficiency.",
+    "I had the privilege to work for Cadence Design Systems as a Product Engineer Intern. Today, my focus is on seeking a career in the semiconductor industry.",
+    "In my leisure time, I indulge in activities such as painting, participating in outdoor sports, enjoying online games, or simply relishing moments of quiet reflection.",
+    "I invite you to explore my online portfolio to gain insights into my qualifications and the projects!"
+  ],
+  "highlight": ["Continental AG", "Cadence Design Systems"]
+}
