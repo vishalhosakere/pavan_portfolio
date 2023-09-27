@@ -13,6 +13,7 @@ function Projects() {
           <Card
             year={exp.date}
             title={exp.title}
+            subtitle={exp.subtitle}
             description={exp.description}
             tags={exp.tags}
             key={idx}
