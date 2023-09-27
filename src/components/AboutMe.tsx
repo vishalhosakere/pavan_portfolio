@@ -15,6 +15,7 @@ function AboutMe() {
             searchWords={aboutData.highlight}
             autoEscape={true}
             textToHighlight={text}
+            key={idx}
           />
         );
       })}
