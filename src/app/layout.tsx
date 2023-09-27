@@ -8,6 +8,7 @@ const seo = {
   title: "Pavan Kendaganna Swamy",
   description: "Portfolio of Pavan Kendaganna Swamy, Electrical Engineer",
   url: "https://pavanportfolio.xyz",
+  image: "/og_image.jpg",
 };
 export const metadata: Metadata = {
   metadataBase: new URL(seo.url),
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     url: seo.url,
     title: seo.title,
     description: seo.description,
+    images: seo.image,
   },
   robots: {
     index: true,
