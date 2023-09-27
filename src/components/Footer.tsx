@@ -6,7 +6,7 @@ function Footer() {
     <footer className="px-4">
       <p className="text-primary-200 text-lg">&quot;{footerData.note}&quot;</p>
       <p>
-        If you think I'd be a good fit for your team{" "}
+        If you think I&apos;d be a good fit for your team
         <a href={footerData.link} className="text-accent-200">
           <span className="inline-flex gap-1 items-center group">
             drop me an email
