@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 function Footer() {
   return (
     <footer className="px-4">
-      <p className="text-primary-200 text-lg">{footerData.note}</p>
+      <p className="text-primary-200 text-lg">&quot;{footerData.note}&quot;</p>
       <p>
         If you think I'd be a good fit for your team{" "}
         <a href={footerData.link} className="text-accent-200">
