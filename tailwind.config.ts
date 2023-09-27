@@ -17,7 +17,7 @@ const config: Config = {
       },
       colors: {
         primary: colors.neutral,
-        accent: colors.teal,
+        accent: colors.slate,
       },
       boxShadow: {
         inner: "0px 0px 10px 0px rgba(0, 0, 0, 1) inset",
