@@ -35,18 +35,20 @@ function Header() {
         })}
       </div>
       <div className="flex justify-start gap-10">
-        <a href={socialLinks.linkedin} target="_blank">
-          <PiLinkedinLogo
-            className="text-4xl hover:text-accent-200 hover:scale-110 cursor-pointer"
-            alt="Link to my LinkedIn"
-          />
+        <a
+          href={socialLinks.linkedin}
+          target="_blank"
+          aria-label="Visit my LinkedIn profile"
+        >
+          <PiLinkedinLogo className="text-4xl hover:text-accent-200 hover:scale-110 cursor-pointer" />
         </a>
 
-        <a href={socialLinks.github} target="_blank">
-          <PiGithubLogo
-            className="text-4xl hover:text-accent-200 hover:scale-110 cursor-pointer"
-            alt="Link to my Github"
-          />
+        <a
+          href={socialLinks.github}
+          target="_blank"
+          aria-label="Visit my Github profile"
+        >
+          <PiGithubLogo className="text-4xl hover:text-accent-200 hover:scale-110 cursor-pointer" />
         </a>
       </div>
     </header>
