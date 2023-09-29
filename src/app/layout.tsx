@@ -1,4 +1,5 @@
 import "./globals.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -47,6 +48,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-pt-24 scroll-smooth">
+      {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+        <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+      ) : null}
       <body className={inter.className}>{children}</body>
     </html>
   );
