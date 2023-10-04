@@ -27,6 +27,7 @@ function Header() {
               className="cursor-pointer hover:text-accent-200 flex items-center gap-2 group font-bold"
               key={idx}
               rel="nofollow"
+              href={"#" + link}
             >
               <span className="bar w-10 h-0.5 bg-primary-200 group-hover:bg-accent-200 transition-all duration-200"></span>
               <span className="uppercase">{link}</span>
