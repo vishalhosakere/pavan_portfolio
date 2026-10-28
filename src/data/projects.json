@@ -1,58 +1,77 @@
-[
-  {
-    "title": "2-bit Full Adder 7nm PDK",
-    "subtitle": "",
-    "date": "Spring 2022",
-    "description": [
-      "Developed Verilog code for the design and synthesized netlist using Design Compiler",
-      "Performed APR using Innovus and imported GDS from Innovus into Cadence Virtuoso layout",
-      "Performed simulation using the Hspice simulator"
-    ],
-    "tags": ["Innovus", "DC Compiler", "Virtuoso", "DRC", "LVS"]
-  },
-  {
-    "title": "AOI22 7nm PDK",
-    "subtitle": "",
-    "date": "Spring 2022",
-    "description": [
-      "Designed AOI21 schematics and layout using Cadence Virtuoso",
-      "Devised test bench to observe delay and functionality by HSPICE simulation",
-      "Performed LVS, DRC, and Pex extraction",
-      "Compared the delay metrics of pre and post-layout simulation to understand the impact of RC delay",
-      "Placed the cells in a 3x3 matrix and cleared DRC to realize the importance of compact layout design"
-    ],
-    "tags": ["Virtuoso", "HSpice", "Layout", "Pex"]
-  },
-  {
-    "title": "16x16 RF",
-    "subtitle": "",
-    "date": "Spring 2022",
-    "description": [
-      "Designed the schematic and layout of a 16x1 Column of the RF and of 4x16 Decoder",
-      "Integrated 16x1 Column Group with 4x16 Decoder to obtain 16x16 RF",
-      "Verified RF functionality with test scripts."
-    ],
-    "tags": ["Virtuoso", "Hspice"]
-  },
-  {
-    "title": "CMOS Digital Circuits",
-    "subtitle": "",
-    "date": "Fall 2021",
-    "description": [
-      "Simulated the various basic circuits and thoroughly analyzed their delay, rise, and fall times under various constraints.",
-      "Designed a 4-bit adder with 32nm technology achieving an area of 33.26 μm², a delay of 62.1pS",
-      "Implemented layout of digital circuits, designing a test bench and simulation using Hspice"
-    ],
-    "tags": ["Virtuoso", "HSpice"]
-  },
-  {
-    "title": "Professional Development",
-    "subtitle": "",
-    "date": "",
-    "description": [
-      "Various online resources and Udemy courses that focused on understanding critical subjects like RTL to GDSII in Physical Design and the associated issues, as well as Static Timing Analysis",
-      "Scripting topics, including regular expressions (Regex) and TCL, work is documented at GitHub"
-    ],
-    "tags": []
-  }
-]
+{
+  "items": [
+    {
+      "title": "2-bit Full Adder 7nm PDK",
+      "subtitle": "",
+      "date": "Spring 2022",
+      "description": [
+        "Developed Verilog code for the design and synthesized netlist using Design Compiler",
+        "Performed APR using Innovus and imported GDS from Innovus into Cadence Virtuoso layout",
+        "Performed simulation using the Hspice simulator"
+      ],
+      "tags": [
+        "Innovus",
+        "DC Compiler",
+        "Virtuoso",
+        "DRC",
+        "LVS"
+      ]
+    },
+    {
+      "title": "AOI22 7nm PDK",
+      "subtitle": "",
+      "date": "Spring 2022",
+      "description": [
+        "Designed AOI21 schematics and layout using Cadence Virtuoso",
+        "Devised test bench to observe delay and functionality by HSPICE simulation",
+        "Performed LVS, DRC, and Pex extraction",
+        "Compared the delay metrics of pre and post-layout simulation to understand the impact of RC delay",
+        "Placed the cells in a 3x3 matrix and cleared DRC to realize the importance of compact layout design"
+      ],
+      "tags": [
+        "Virtuoso",
+        "HSpice",
+        "Layout",
+        "Pex"
+      ]
+    },
+    {
+      "title": "16x16 RF",
+      "subtitle": "",
+      "date": "Spring 2022",
+      "description": [
+        "Designed the schematic and layout of a 16x1 Column of the RF and of 4x16 Decoder",
+        "Integrated 16x1 Column Group with 4x16 Decoder to obtain 16x16 RF",
+        "Verified RF functionality with test scripts."
+      ],
+      "tags": [
+        "Virtuoso",
+        "Hspice"
+      ]
+    },
+    {
+      "title": "CMOS Digital Circuits",
+      "subtitle": "",
+      "date": "Fall 2021",
+      "description": [
+        "Simulated the various basic circuits and thoroughly analyzed their delay, rise, and fall times under various constraints.",
+        "Designed a 4-bit adder with 32nm technology achieving an area of 33.26 μm², a delay of 62.1pS",
+        "Implemented layout of digital circuits, designing a test bench and simulation using Hspice"
+      ],
+      "tags": [
+        "Virtuoso",
+        "HSpice"
+      ]
+    },
+    {
+      "title": "Professional Development",
+      "subtitle": "",
+      "date": "",
+      "description": [
+        "Various online resources and Udemy courses that focused on understanding critical subjects like RTL to GDSII in Physical Design and the associated issues, as well as Static Timing Analysis",
+        "Scripting topics, including regular expressions (Regex) and TCL, work is documented at GitHub"
+      ],
+      "tags": []
+    }
+  ]
+}

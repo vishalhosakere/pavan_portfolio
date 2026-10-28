@@ -1,4 +1,4 @@
-import projects from "@/data/projects.json";
+import projectData from "@/data/projects.json";
 import Card from "@/elements/Card";
 import SectionHeading from "@/elements/SectionHeading";
 
@@ -7,7 +7,7 @@ function Projects() {
     <section id="projects" aria-labelledby="projects-heading" className="pb-24">
       <SectionHeading id="projects-heading">Projects</SectionHeading>
       <ol className="group/list list-none">
-        {projects.map((project, idx) => (
+        {projectData.items.map((project, idx) => (
           <Card
             year={project.date}
             title={project.title}

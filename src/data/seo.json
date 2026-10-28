@@ -27,10 +27,8 @@
     "SystemVerilog",
     "ISO 26262 embedded software"
   ],
-  "ogImage": {
-    "url": "/og-image.jpg",
-    "width": 1200,
-    "height": 630,
-    "alt": "Pavan Kendaganna Swamy, Electrical Engineer"
-  }
+  "ogImage": "/ogImage.jpg",
+  "ogImageAlt": "Pavan Kendaganna Swamy, Electrical Engineer",
+  "ogImageWidth": 1200,
+  "ogImageHeight": 630
 }

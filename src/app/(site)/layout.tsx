@@ -1,15 +1,17 @@
-import "./globals.css";
+import "../globals.css";
 
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import headerData from "@/data/header.json";
 import seo from "@/data/seo.json";
 import { CANONICAL_URL, GOOGLE_SITE_VERIFICATION, IS_INDEXABLE, SITE_URL } from "@/lib/site";
-import { DARK_SCHEME_QUERY, THEME_COLORS, THEME_INIT_SCRIPT } from "@/lib/theme";
+import { THEME_INIT_SCRIPT, THEME_VIEWPORT } from "@/lib/theme";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const OG_IMAGE = { url: seo.ogImage, width: seo.ogImageWidth, height: seo.ogImageHeight, alt: seo.ogImageAlt };
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -34,24 +36,18 @@ export const metadata: Metadata = {
     locale: "en_US",
     firstName: seo.givenName,
     lastName: seo.familyName,
-    images: [{ ...seo.ogImage, type: "image/jpeg" }],
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: seo.title,
     description: seo.description,
-    images: [seo.ogImage],
+    images: [OG_IMAGE],
   },
   ...(GOOGLE_SITE_VERIFICATION ? { verification: { google: GOOGLE_SITE_VERIFICATION } } : {}),
 };
 
-export const viewport: Viewport = {
-  colorScheme: "light dark",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: THEME_COLORS.light },
-    { media: DARK_SCHEME_QUERY, color: THEME_COLORS.dark },
-  ],
-};
+export const viewport = THEME_VIEWPORT;
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

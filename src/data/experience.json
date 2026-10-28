@@ -1,42 +1,56 @@
-[
-  {
-    "title": "Product Engineer Intern",
-    "subtitle": "Cadence Design Systems",
-    "date": "May '22 - Dec '22",
-    "description": [
-      "Predominantly worked on Design Implementation flow from Placement to SignOff",
-      "Timing Optimization with 30% better at SignOff",
-      "Leakage Power optimization with 15% better"
-    ],
-    "tags": ["Innovus", "Cerebrus", "Genus", "Tempus", "16 nm"]
-  },
-  {
-    "title": "Master's in Computer Engineering (Electrical)",
-    "subtitle": "Arizona State University",
-    "date": "Aug '21 - May '23",
-    "description": [
-      "Concentrated on Physical Design and Digital Design course work",
-      "Digital Systems Circuits, VLSI Design, Constructionist Approach to Microprocessor, Logic Design using System Verilog, Python, Computer Architecture-2"
-    ],
-    "tags": [
-      "MOSFET",
-      "ASIC",
-      "PD flow",
-      "Delay",
-      "Power",
-      "Interconnect",
-      "STA"
-    ]
-  },
-  {
-    "title": "Technical Specialist ADAS",
-    "subtitle": "Continental AG",
-    "date": "July '17 - July '21",
-    "description": [
-      "Worked for realizing ADAS functionalities for driverless cars",
-      "Implemented ISO 26262 standard driver level software for Radar and Camera",
-      "Interacted with Customer regularly in spec discussion, development, and debugging"
-    ],
-    "tags": ["Davinci", "CanOe", "Leadership", "Embedded"]
-  }
-]
+{
+  "items": [
+    {
+      "title": "Product Engineer Intern",
+      "subtitle": "Cadence Design Systems",
+      "date": "May '22 - Dec '22",
+      "description": [
+        "Predominantly worked on Design Implementation flow from Placement to SignOff",
+        "Timing Optimization with 30% better at SignOff",
+        "Leakage Power optimization with 15% better"
+      ],
+      "tags": [
+        "Innovus",
+        "Cerebrus",
+        "Genus",
+        "Tempus",
+        "16 nm"
+      ]
+    },
+    {
+      "title": "Master's in Computer Engineering (Electrical)",
+      "subtitle": "Arizona State University",
+      "date": "Aug '21 - May '23",
+      "description": [
+        "Concentrated on Physical Design and Digital Design course work",
+        "Digital Systems Circuits, VLSI Design, Constructionist Approach to Microprocessor, Logic Design using System Verilog, Python, Computer Architecture-2"
+      ],
+      "tags": [
+        "MOSFET",
+        "ASIC",
+        "PD flow",
+        "Delay",
+        "Power",
+        "Interconnect",
+        "STA"
+      ]
+    },
+    {
+      "title": "Technical Specialist ADAS",
+      "subtitle": "Continental AG",
+      "date": "July '17 - July '21",
+      "description": [
+        "Worked for realizing ADAS functionalities for driverless cars",
+        "Implemented ISO 26262 standard driver level software for Radar and Camera",
+        "Interacted with Customer regularly in spec discussion, development, and debugging"
+      ],
+      "tags": [
+        "Davinci",
+        "CanOe",
+        "Leadership",
+        "Embedded"
+      ]
+    }
+  ],
+  "resume": "/resume.pdf"
+}
