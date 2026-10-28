@@ -1,4 +1,5 @@
 import "../globals.css";
+import { STRIP_NETLIFY_HEAD } from "@/lib/netlify-head";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -53,7 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className="scroll-pt-24 motion-safe:scroll-smooth" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: `${STRIP_NETLIFY_HEAD};${THEME_INIT_SCRIPT}` }} />
       </head>
       <body className={inter.className}>
         {children}

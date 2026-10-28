@@ -1,4 +1,5 @@
 import "./globals.css";
+import { STRIP_NETLIFY_HEAD } from "@/lib/netlify-head";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -19,7 +20,7 @@ export default function GlobalNotFound() {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: `${STRIP_NETLIFY_HEAD};${THEME_INIT_SCRIPT}` }} />
       </head>
       <body className={inter.className}>
         <main className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-4 px-6 md:px-12 lg:px-24">
