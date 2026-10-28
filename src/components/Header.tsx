@@ -1,10 +1,7 @@
-"use client";
-import * as Scroll from "react-scroll";
+import SectionNav from "@/components/SectionNav";
 import { PiLinkedinLogo, PiGithubLogo } from "react-icons/pi";
 import headerData from "@/data/header.json";
 import socialLinks from "@/data/sociallinks.json";
-
-const links = ["about", "experiences", "projects"];
 
 function Header() {
   return (
@@ -16,25 +13,7 @@ function Header() {
         <h2 className="text-2xl pt-3 text-primary-200">{headerData.role}</h2>
         <p className="pt-3 pr-20">{headerData.description}</p>
       </div>
-      <div className=" flex-col w-fit lg:flex hidden">
-        {links.map((link, idx) => {
-          return (
-            <Scroll.Link
-              activeClass="active"
-              to={link}
-              spy={true}
-              offset={-96}
-              className="cursor-pointer hover:text-accent-200 flex items-center gap-2 group font-bold"
-              key={idx}
-              rel="nofollow"
-              href={"#" + link}
-            >
-              <span className="bar w-10 h-0.5 bg-primary-200 group-hover:bg-accent-200 transition-all duration-200"></span>
-              <span className="uppercase">{link}</span>
-            </Scroll.Link>
-          );
-        })}
-      </div>
+      <SectionNav />
       <div className="flex justify-start gap-10">
         <a
           href={socialLinks.linkedin}

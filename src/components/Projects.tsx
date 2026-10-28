@@ -1,6 +1,5 @@
 import projects from "@/data/projects.json";
 import Card from "@/elements/Card";
-import { PiArrowRightBold } from "react-icons/pi";
 
 function Projects() {
   return (

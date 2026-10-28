@@ -1,5 +1,8 @@
+# Netlify detects Next.js and installs its current adapter automatically,
+# so the adapter is intentionally not pinned here or in package.json.
 [build]
   command = "npm run build"
+  publish = ".next"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[build.environment]
+  NODE_VERSION = "24"
