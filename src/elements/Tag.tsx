@@ -3,7 +3,7 @@ type TagProps = {
 };
 
 function Tag({ value }: TagProps) {
-  return <li className="rounded-full bg-accent-800 px-4 py-1 text-sm font-bold text-accent-200">{value}</li>;
+  return <li className="rounded-full bg-tag px-4 py-1 text-sm font-bold text-tag-fg">{value}</li>;
 }
 
 export default Tag;

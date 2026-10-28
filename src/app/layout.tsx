@@ -1,12 +1,13 @@
 import "./globals.css";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import headerData from "@/data/header.json";
 import seo from "@/data/seo.json";
 import { CANONICAL_URL, GOOGLE_SITE_VERIFICATION, IS_INDEXABLE, SITE_URL } from "@/lib/site";
+import { DARK_SCHEME_QUERY, THEME_COLORS, THEME_INIT_SCRIPT } from "@/lib/theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,9 +45,20 @@ export const metadata: Metadata = {
   ...(GOOGLE_SITE_VERIFICATION ? { verification: { google: GOOGLE_SITE_VERIFICATION } } : {}),
 };
 
+export const viewport: Viewport = {
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: THEME_COLORS.light },
+    { media: DARK_SCHEME_QUERY, color: THEME_COLORS.dark },
+  ],
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="scroll-pt-24 motion-safe:scroll-smooth">
+    <html lang="en" className="scroll-pt-24 motion-safe:scroll-smooth" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body className={inter.className}>
         {children}
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} /> : null}

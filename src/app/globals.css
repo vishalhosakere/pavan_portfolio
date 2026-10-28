@@ -1,14 +1,71 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 @theme inline {
-  --color-primary-200: var(--color-neutral-200);
-  --color-primary-400: var(--color-neutral-400);
-  --color-primary-900: var(--color-neutral-900);
-  --color-accent-200: var(--color-slate-200);
-  --color-accent-800: var(--color-slate-800);
+  --color-canvas: var(--canvas);
+  --color-fg: var(--fg);
+  --color-fg-strong: var(--fg-strong);
+  --color-accent: var(--accent);
+  --color-tag: var(--tag);
+  --color-tag-fg: var(--tag-fg);
+  --color-edge: var(--edge);
+  --color-surface: var(--surface);
 }
 
-body {
-  color: var(--color-primary-400);
-  background: var(--color-primary-900);
+/* WCAG contrast on --canvas: fg 7.5:1, accent 9.9:1, tag-fg on tag 11.9:1 (light); fg 7.1:1, accent 14.5:1, tag-fg on tag 11.9:1 (dark). */
+:root {
+  color-scheme: light;
+  --canvas: #fafafa;
+  --fg: #525252;
+  --fg-strong: #171717;
+  --accent: #334155;
+  --tag: #e2e8f0;
+  --tag-fg: #1e293b;
+  --edge: #cbd5e1;
+  --surface: #f1f5f9;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #171717;
+  --fg: #a3a3a3;
+  --fg-strong: #e5e5e5;
+  --accent: #e2e8f0;
+  --tag: #1e293b;
+  --tag-fg: #e2e8f0;
+  --edge: #334155;
+  --surface: rgb(30 41 59 / 0.35);
+}
+
+/* Without JavaScript no data-theme is set, so follow the system preference directly. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --canvas: #171717;
+    --fg: #a3a3a3;
+    --fg-strong: #e5e5e5;
+    --accent: #e2e8f0;
+    --tag: #1e293b;
+    --tag-fg: #e2e8f0;
+    --edge: #334155;
+    --surface: rgb(30 41 59 / 0.35);
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--canvas);
+    color: var(--fg);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: var(--tag);
+    color: var(--tag-fg);
+  }
 }

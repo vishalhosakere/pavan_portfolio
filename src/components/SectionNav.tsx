@@ -21,11 +21,11 @@ function SectionNav() {
             <a
               href={`#${id}`}
               aria-current={activeId === id ? "location" : undefined}
-              className="group flex items-center gap-2 font-bold uppercase hover:text-accent-200 aria-[current=location]:text-accent-200"
+              className="group flex items-center gap-2 font-bold uppercase hover:text-accent aria-[current=location]:text-accent"
             >
               <span
                 aria-hidden="true"
-                className="h-0.5 w-10 bg-primary-200 transition-all duration-200 group-hover:bg-accent-200 group-aria-[current=location]:w-20 group-aria-[current=location]:bg-accent-200"
+                className="h-0.5 w-10 bg-fg-strong transition-all duration-200 group-hover:bg-accent group-aria-[current=location]:w-20 group-aria-[current=location]:bg-accent"
               />
               {label}
             </a>

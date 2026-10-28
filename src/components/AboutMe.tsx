@@ -11,7 +11,7 @@ function AboutMe() {
         <p key={idx}>
           <Highlighter
             highlightTag="strong"
-            highlightClassName="bg-transparent font-medium text-primary-200"
+            highlightClassName="bg-transparent font-medium text-fg-strong"
             searchWords={aboutData.highlight}
             autoEscape={true}
             textToHighlight={text}

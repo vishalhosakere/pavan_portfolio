@@ -22,9 +22,9 @@ function Experiences() {
       </ol>
       <div className="px-4">
         <a className="group flex w-fit items-center gap-1 text-xl" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-          <span className="border-b-2 border-transparent group-hover:border-b-accent-200">View Full Resume</span>
+          <span className="border-b-2 border-transparent group-hover:border-b-accent">View Full Resume</span>
           <span className="sr-only"> (PDF, opens in a new tab)</span>
-          <PiArrowRightBold aria-hidden="true" className="duration-200 group-hover:translate-x-2 group-hover:text-accent-200" />
+          <PiArrowRightBold aria-hidden="true" className="duration-200 group-hover:translate-x-2 group-hover:text-accent" />
         </a>
       </div>
     </section>
