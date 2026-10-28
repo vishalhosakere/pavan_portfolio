@@ -1,20 +1,19 @@
 import projects from "@/data/projects.json";
 import Card from "@/elements/Card";
+import SectionHeading from "@/elements/SectionHeading";
 
 function Projects() {
   return (
-    <section id="projects" className="pb-24">
-      <h3 className="flex lg:hidden text-primary-200 text-xl uppercase font-bold pb-10">
-        Projects
-      </h3>
-      <ol className="list-none group/list">
-        {projects.map((exp, idx) => (
+    <section id="projects" aria-labelledby="projects-heading" className="pb-24">
+      <SectionHeading id="projects-heading">Projects</SectionHeading>
+      <ol className="group/list list-none">
+        {projects.map((project, idx) => (
           <Card
-            year={exp.date}
-            title={exp.title}
-            subtitle={exp.subtitle}
-            description={exp.description}
-            tags={exp.tags}
+            year={project.date}
+            title={project.title}
+            subtitle={project.subtitle}
+            description={project.description}
+            tags={project.tags}
             key={idx}
           />
         ))}

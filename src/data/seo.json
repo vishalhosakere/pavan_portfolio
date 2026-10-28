@@ -1,0 +1,36 @@
+{
+  "title": "Pavan Kendaganna Swamy | Electrical & VLSI Engineer",
+  "description": "Electrical engineer Pavan Kendaganna Swamy: VLSI physical design, static timing and power optimization. MS Computer Engineering (ASU), former Cadence intern.",
+  "givenName": "Pavan",
+  "familyName": "Kendaganna Swamy",
+  "alumniOf": "Arizona State University",
+  "keywords": [
+    "Pavan Kendaganna Swamy",
+    "Electrical Engineer",
+    "VLSI",
+    "Physical Design",
+    "Static Timing Analysis",
+    "ASIC",
+    "Semiconductor",
+    "Cadence Innovus",
+    "Portfolio"
+  ],
+  "knowsAbout": [
+    "VLSI design",
+    "Physical design (RTL to GDSII)",
+    "Static timing analysis",
+    "Leakage power optimization",
+    "ASIC design flow",
+    "Cadence Innovus",
+    "Cadence Virtuoso",
+    "HSPICE",
+    "SystemVerilog",
+    "ISO 26262 embedded software"
+  ],
+  "ogImage": {
+    "url": "/og-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Pavan Kendaganna Swamy, Electrical Engineer"
+  }
+}

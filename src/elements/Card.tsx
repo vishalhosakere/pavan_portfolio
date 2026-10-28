@@ -1,5 +1,4 @@
 import Tag from "./Tag";
-// import { PiArrowRightBold } from "react-icons/pi";
 
 type CardProps = {
   year: string;
@@ -12,30 +11,23 @@ type CardProps = {
 const Card = ({ year, title, subtitle, description, tags }: CardProps) => {
   return (
     <li className="mb-12">
-      <div className="group rounded-lg hover:opacity-100! border-transparent lg:hover:border-accent-800 border-2 lg:group-hover/list:opacity-50 grid sm:grid-cols-10 p-4 transition-colors duration-100">
-        {year && <div className="sm:col-span-3 mt-1 text-sm">{year}</div>}
-        <div
-          className={year !== "" ? "sm:col-span-7" : "sm:col-span-10 sm:mx-10"}
-        >
-          <div className="text-xl text-primary-200 lg:group-hover:text-accent-200 flex items-center gap-2">
-            {title}
-            {/* <PiArrowRightBold className="lg:group-hover:translate-x-2 duration-200" /> */}
-          </div>
-          {subtitle != "" && (
-            <div className="text-lg lg:group-hover:text-primary-200">
-              {subtitle}
-            </div>
+      <div className="group grid rounded-lg border-2 border-transparent p-4 transition-colors duration-100 sm:grid-cols-10 lg:group-hover/list:opacity-50 lg:hover:border-accent-800 hover:opacity-100!">
+        {year && <p className="mt-1 text-sm sm:col-span-3">{year}</p>}
+        <div className={year ? "sm:col-span-7" : "sm:col-span-10 sm:mx-10"}>
+          <h3 className="text-xl font-normal text-primary-200 lg:group-hover:text-accent-200">{title}</h3>
+          {subtitle && <p className="text-lg lg:group-hover:text-primary-200">{subtitle}</p>}
+          <ul className="mt-3 list-disc">
+            {description.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+          {tags.length > 0 && (
+            <ul aria-label="Tools and skills" className="mt-5 flex flex-wrap gap-2">
+              {tags.map((tag, idx) => (
+                <Tag value={tag} key={idx} />
+              ))}
+            </ul>
           )}
-          <ol className="list-disc mt-3">
-            {description.map((item, idx) => {
-              return <li key={idx}>{item}</li>;
-            })}
-          </ol>
-          <div className="flex mt-5 gap-2 flex-wrap">
-            {tags.map((tag, idx) => {
-              return <Tag value={tag} key={idx} />;
-            })}
-          </div>
         </div>
       </div>
     </li>

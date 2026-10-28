@@ -1,36 +1,38 @@
+import { PiGithubLogo, PiLinkedinLogo } from "react-icons/pi";
+
 import SectionNav from "@/components/SectionNav";
-import { PiLinkedinLogo, PiGithubLogo } from "react-icons/pi";
 import headerData from "@/data/header.json";
 import socialLinks from "@/data/sociallinks.json";
 
+const SOCIAL_PROFILES = [
+  { href: socialLinks.linkedin, label: "LinkedIn profile", Icon: PiLinkedinLogo },
+  { href: socialLinks.github, label: "GitHub profile", Icon: PiGithubLogo },
+];
+
 function Header() {
   return (
-    <header className="lg:sticky lg:top-0 flex lg:max-h-screen lg:w-1/2 flex-col lg:justify-between lg:py-24 gap-10">
+    <header className="flex flex-col gap-10 lg:sticky lg:top-0 lg:max-h-screen lg:w-1/2 lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-5xl font-bold text-primary-200">
-          {headerData.name}
-        </h1>
-        <h2 className="text-2xl pt-3 text-primary-200">{headerData.role}</h2>
-        <p className="pt-3 pr-20">{headerData.description}</p>
+        <h1 className="text-5xl font-bold text-primary-200">{headerData.name}</h1>
+        <p className="pt-3 text-2xl text-primary-200">{headerData.role}</p>
+        <p className="max-w-md pt-3">{headerData.description}</p>
       </div>
       <SectionNav />
-      <div className="flex justify-start gap-10">
-        <a
-          href={socialLinks.linkedin}
-          target="_blank"
-          aria-label="Visit my LinkedIn profile"
-        >
-          <PiLinkedinLogo className="text-4xl hover:text-accent-200 hover:scale-110 cursor-pointer" />
-        </a>
-
-        <a
-          href={socialLinks.github}
-          target="_blank"
-          aria-label="Visit my Github profile"
-        >
-          <PiGithubLogo className="text-4xl hover:text-accent-200 hover:scale-110 cursor-pointer" />
-        </a>
-      </div>
+      <ul aria-label="Social profiles" className="flex items-center gap-10">
+        {SOCIAL_PROFILES.map(({ href, label, Icon }) => (
+          <li key={href}>
+            <a
+              href={href}
+              target="_blank"
+              rel="me noopener noreferrer"
+              aria-label={`${label} (opens in a new tab)`}
+              className="block transition-transform hover:scale-110 hover:text-accent-200"
+            >
+              <Icon aria-hidden="true" className="text-4xl" />
+            </a>
+          </li>
+        ))}
+      </ul>
     </header>
   );
 }

@@ -15,7 +15,7 @@
     "subtitle": "Arizona State University",
     "date": "Aug '21 - May '23",
     "description": [
-      "Concentrated on Physial Design and Digital Design course work",
+      "Concentrated on Physical Design and Digital Design course work",
       "Digital Systems Circuits, VLSI Design, Constructionist Approach to Microprocessor, Logic Design using System Verilog, Python, Computer Architecture-2"
     ],
     "tags": [
@@ -33,7 +33,7 @@
     "subtitle": "Continental AG",
     "date": "July '17 - July '21",
     "description": [
-      "Worked for realizing ADAS functionalitied for driver less cars",
+      "Worked for realizing ADAS functionalities for driverless cars",
       "Implemented ISO 26262 standard driver level software for Radar and Camera",
       "Interacted with Customer regularly in spec discussion, development, and debugging"
     ],

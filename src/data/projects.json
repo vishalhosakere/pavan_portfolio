@@ -5,10 +5,10 @@
     "date": "Spring 2022",
     "description": [
       "Developed Verilog code for the design and synthesized netlist using Design Compiler",
-      " Performed APR using Innovus and imported GDS from Innovus into cadence virtuoso layout",
+      "Performed APR using Innovus and imported GDS from Innovus into Cadence Virtuoso layout",
       "Performed simulation using the Hspice simulator"
     ],
-    "tags": ["Innvous", "DC Compiler", "Virtuoso", "DRC", "LVS"]
+    "tags": ["Innovus", "DC Compiler", "Virtuoso", "DRC", "LVS"]
   },
   {
     "title": "AOI22 7nm PDK",
